@@ -35,7 +35,7 @@
 </main>
 <div class="modal" id="modal"><div class="modal-card"><div class="modal-glyph" id="modalGlyph">✦</div><h2 id="modalTitle">Channel claimed.</h2><p id="modalText">The last pulse belongs to you.</p><button class="control" id="againBtn">DEAL A NEW HAND &nbsp; ↻</button></div></div>
 <script>
-const $=s=>document.querySelector(s);
+const $=s=>document.querySelector(s[0]==='#'||s[0]==='.'?s:'#'+s);
 const tactics=[
   {id:'scan',name:'Signal Scan',icon:'⌕',type:'',copy:'Reveal the next pulse to both players.'},
   {id:'refract',name:'Refract',icon:'⟳',type:'hot-card',copy:'Flip the next pulse: Surge ↔ Drift.'},
